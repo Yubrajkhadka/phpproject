@@ -1,0 +1,685 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+        <!-- Jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js" integrity="sha512-JGKswjfABjJjtSUnz+y8XUBjBlwM1UHNlm2ZJN7A2a9HUYT3Mskq+SacsI35k4lok+/zetSxhZjKS3r3tfAnQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" integrity="sha512-urpIFwfLI9ZDL81s6eJjgBF7LpG+ROXjp1oNwTj4gSlCw00KiV1rWBrfszV3uf5r+v621fsAwqvy1wRJeeWT/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        
+        <link rel="stylesheet" href="adminstyle.css">
+        <title>Admin Panel</title>
+    </head>
+    <body>
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h3 class="d-flex"><i class="fas fa-mobile-alt"></i>&nbsp;<span>Online Mobile Shop</span></h3>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li id="cb">
+                         <a>
+                             <span class="icon"><i class="far fa-plus-square"></i></i></span>
+                             <span class="title">Create Brand</span>
+                         </a>
+                     </li>
+                     <li id="mbr">
+                        <a>
+                            <span class="icon"><i class="fas fa-copy"></i></span>
+                            <span class="title">Manage Brands</span>
+                        </a>
+                    </li>
+                     <li id="aav">
+                         <a>
+                             <span class="icon"><i class="fas fa-plus"></i></span>
+                             <span class="title">Add Mobile</span>
+                         </a> 
+                     </li>
+                     <li id="mv">
+                        <a>
+                            <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                            <span class="title">Manage Mobiles</span>
+                        </a> 
+                    </li>
+                     <li id="mbk">
+                         <a>
+                             <span class="icon"><i class="fas fa-list"></i></span>
+                             <span class="title">Manage Orders</span>
+                         </a>
+                     </li>
+                     <li id="mcu">
+                         <a>
+                             <span class="icon"><i class="fas fa-address-book"></i></span>
+                             <span class="title">Manage Contact Us Query</span>
+                         </a>
+                     </li>
+                     <li id="ru">
+                         <a>
+                             <span class="icon"><i class="fas fa-users"></i></span>
+                             <span class="title">Reg Users</span>
+                         </a>
+                        </li>
+                     <li id="uc">
+                         <a>
+                             <span class="icon"><i class="fas fa-address-card"></i></span>
+                             <span class="title">Update Contact Info</span>
+                         </a>
+                     </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="icon"><i class="fas fa-list-alt"></i></span>
+                    </label>
+                    Dashboard
+                </h2>
+                <div class="search-wrapper">
+                    <span><i class="fas fa-search"></i></span>
+                    <input type="search" placeholder="Search here">
+                </div>
+                <div class="user-wrapper">
+                    <img src="./images/ishwar.jpg" width="40px" height="40px" alt="">
+                    <div>
+                        <h4>Ishwar Khadka</h4>
+                        <small>Super admin</small>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="cards">
+                    <div class="card-single">
+                        <div>
+                            <h1>5</h1>
+                            <span>Registered Users</span>
+                        </div>
+                        <div>
+                            <span class="icon"><i class="fas fa-users"></i></span>
+                        </div>
+                    </div>
+    
+                    <div class="card-single">
+                        <div>
+                            <h1>7</h1>
+                            <span>Listed Mobiles</span>
+                        </div>
+                        <div>
+                            <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                        </div>
+                    </div>
+    
+                    <div class="card-single">
+                        <div>
+                            <h1>4</h1>
+                            <span>Total Orders</span>
+                        </div>
+                        <div>
+                            <span class="icon"><i class="fas fa-th-list"></i></span>
+                        </div>
+                    </div>
+    
+                    <div class="card-single">
+                        <div>
+                            <h1>6</h1>
+                            <span>Brands</span>
+                        </div>
+                        <div>
+                            <span class="icon"><i class="fas fa-copy"></i></span>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+    
+                <div class="recent-grid">
+                    <div class="add-brand">
+                        <div class="card align-items-center">
+                            
+                            <h3 class="text-primary">Create Brand</h3>
+                            <br/>
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label for="brandname"><h4>New Brand Name:</h4></label>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="brandname">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" name="createbrand" class="btn btn-primary text-center" value = "Create Brand">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="manage-brands">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Manage Brands</h3>
+                                <button>See All<span ><i class="fas fa-arrow-right"></i></span></button>
+                            </div>
+    
+                            <div class="card-body">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>#</td>
+                                            <td>Brand Name</td>
+                                            <td>Creation Date</td>
+                                            <td>Updation Date</td>
+                                            <td>Action</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Samsung</td>
+                                            <td>2021-06-22</td>
+                                            <td>2021-07-11</td>
+                                            <td class="action">
+                                                <button><span><i class="far fa-edit"></i></span></button>
+                                                <button><span><i class="far fa-trash-alt"></i></span></button>
+                                            </td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-mobile">
+                        <div class="card align-items-center">
+                            
+                            <h3 class="text-primary">Add a Mobile</h3>
+                            
+                                       
+                            
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label for="name"><h4>Name:</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text" name="name" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="price"><h4>Market Price(RS.):</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="number" name="m_price" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="price"><h4>Selling Price(RS.):</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="number" name="s_price" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="brand"><h4>Select Brand*</h4></label>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" name="brand" required>
+                                                <option value="Samsung">Samsung</option>
+                                                <option value="Apple">Apple</option>
+                                                <option value="Xiaomi">Xiaomi</option>
+                                            </select> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="launchyear"><h4>Launch Year:</h4></label>   
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="date" name="launchyear" required>  
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="ram"><h4>RAM(GB):</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="number" name="ram" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="rom"><h4>ROM(GB):</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="number" name="rom" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="processor"><h4>Processor:</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text" name="processor" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="screensize"><h4>Screen Size:</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text" name="screensize" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="backcamera"><h4>Back Camera(MP):</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text" name="backcamera" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="backcamera"><h4>Front Camera(MP):</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text" name="backcamera" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="os"><h4>OS:</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text" name="os" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="battery"><h4>Battery(mah):</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="number" name="battery" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="display_description"><h4>Display Discription:</h4></label>
+                                        </td>
+                                        <td>
+                                            <textarea class="form-control" name="display_description" required></textarea>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label for="color"><h4>Color:</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="text" name="color" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="stock"><h4>Stock:</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="number" name="stock" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="upload image"><h4>Upload Image:</h4></label>
+                                        </td>
+                                        <td>
+                                            <input class="form-control" type="file" id="image" name="image" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="sensors"><h4>Sensors:</h4></label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="fingerprint" value="FingerPrint Sensor">
+                                            <label for="sfingerprint"> Fingerprint Sensor</label>
+                                            <input type="checkbox" name="gyro" value="Gyroscope Sensor">
+                                            <label for="gyro"> Gyroscope Sensor</label>
+                                            <input type="checkbox" name="accelerometer" value="Accelerometer Sensor">
+                                            <label for="accelerometer"> Accelerometer Sensor</label>
+                                            <input type="checkbox" name="lidar" value="Lidar Sensor">
+                                            <label for="lidar"> Lidar Sensor</label>
+                                            <input type="checkbox" name="magnetometer" value="Magnetometer Sensor">
+                                            <label for="magnetometer"> Magentometer Sensor</label>
+                                            <input type="checkbox" name="gprs" value="GPRS">
+                                            <label for="gprs"> GPRS Sensor</label>    
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="submit" name="addmobile" class="btn btn-primary text-center" value = "Add Mobile">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="regd-users">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Registered Users</h3>
+                                <button>See All<span ><i class="fas fa-arrow-right"></i></span></button>
+                            </div>
+    
+                            <div class="card-body">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>#</td>
+                                            <td>Name</td>
+                                            <td>Email</td>
+                                            <td>Contact no</td>
+                                            <td>Address</td>
+                                            <td>Reg Date</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ishwar Khadka</td>
+                                            <td>ishwarkhadka245@gmail.com</td>
+                                            <td>9860476488</td>
+                                            <td>Thimi, Bhaktapur</td>
+                                            <td>2021-08-01</td>
+                                        </tr>
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listed-mobiles">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Listed Mobiles</h3>
+                                <button>See All<span><i class="fas fa-arrow-right"></i></span></button>
+                            </div>
+                            <div class="card-body">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>#</td>
+                                            <td>Mobile Name</td>
+                                            <td>Brand</td>
+                                            <td>Price</td>
+                                            <td>RAM</td>
+                                            <td>Launch Year</td>
+                                            <td>Action</td>
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Samsung Galaxy M02</td>
+                                            <td>Samsung</td>
+                                            <td>Rs.11999</td>
+                                            <td>2 GB</td>
+                                            <td>2021-01-07</td>
+                                            <td class="action">
+                                            <button><span><i class="far fa-edit"></i></span></button>
+                                            <button><span><i class="far fa-trash-alt"></i></span></button>
+                                            <button><span><i class="far fa-eye"></i></span></button>
+                                            </td>
+                                            
+                                        </tr>
+                                        
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>   
+                     </div>  
+                     <div class="manage-bookings">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Manage Orders</h3>
+                                <button>See All<span ><i class="fas fa-arrow-right"></i></span></button>
+                            </div>
+    
+                            <div class="card-body">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>#</td>
+                                            <td>Email</td>
+                                            <td>Value</td>
+                                            <td>Status</td>
+                                            <td>Order Date</td>
+                                            <td>Action</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>khadkaishwar245@gmail.com</td>
+                                            <td>16000</td>
+                                            <td>Not confirmed yet</td>
+                                            <td>20/06/2021</td>
+                                            <td class="action">
+                                                <a href="">View</a>
+                                                <a href="">Confirm</a>
+                                                <a href="">Cancel</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                     </div>  
+                     <div class="manage-contact">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Manage Contact Us Query</h3>
+                                <button>See All<span ><i class="fas fa-arrow-right"></i></span></button>
+                            </div>
+    
+                            <div class="card-body">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>#</td>
+                                            <td>Name</td>
+                                            <td>Email</td>
+                                            <td>Message</td>
+                                            <td>Posting Date</td>
+                                            <td>Status</td>
+                                            <td>Action</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ishwar Khadka</td>
+                                            <td>ishwarkhadka@kcc.edu.np</td>
+                                            <td>Price of  Samsung s21 fe ?</td>
+                                            <td>20/06/2021</td>
+                                            <td>Pending</td>
+                                            <td class="action">
+                                                <a href="">View</a>
+                                                <a href="">Response</a>
+                                            </td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                     </div> 
+                     <div class="update-contact-info">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Update Contact Info</h3>
+                            </div>
+                            <form action="">
+                                <div>
+                                    <label for="address"><h4>Address</h4></label>
+                                    <input type="text" name="address">
+                                </div>
+                                <div>
+                                    <label for="email"><h4>Email Id</h4></label>
+                                    <input type="email" name="email">
+                                </div>
+                                <div>
+                                    <label for="contact"><h4>Contact Number</h4></label>
+                                    <input type="number" name="contact">
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn-submit">Update</button>
+                                </div>
+                            </form>
+                        </div>
+                     </div> 
+                     
+
+                        
+                </div>
+            </main>
+        </div>
+
+        <script type="text/javascript">
+            let CB = document.querySelector('.add-brand');
+            let MBR = document.querySelector('.manage-brands');
+            let AAV = document.querySelector('.add-mobile');
+            let MV = document.querySelector('.listed-mobiles');
+            let MBK = document.querySelector('.manage-bookings');
+            let MCU = document.querySelector('.manage-contact');
+            let RU = document.querySelector('.regd-users');
+            let UC = document.querySelector('.update-contact-info');
+
+            CB.style.display = 'none';
+            MBR.style.display = 'none';
+            AAV.style.display = 'none';
+            MV.style.display = 'none';
+            MBK.style.display = 'none';
+            MCU.style.display = 'none';
+            RU.style.display = 'none';
+            UC.style.display = 'none';
+
+            document.querySelector('#cb').addEventListener('click', function(){
+                CB.style.display = 'block';
+                MBR.style.display = 'none';
+                AAV.style.display = 'none';
+                MV.style.display = 'none';
+                MBK.style.display = 'none';
+                MCU.style.display = 'none';
+                RU.style.display = 'none';
+                UC.style.display = 'none';
+        });
+        document.querySelector('#mbr').addEventListener('click', function(){
+                CB.style.display = 'none';
+                MBR.style.display = 'block';
+                AAV.style.display = 'none';
+                MV.style.display = 'none';
+                MBK.style.display = 'none';
+                MCU.style.display = 'none';
+                RU.style.display = 'none';
+                UC.style.display = 'none';
+        });
+
+        document.querySelector('#aav').addEventListener('click', function(){
+                CB.style.display = 'none';
+                MBR.style.display = 'none';
+                AAV.style.display = 'block';
+                MV.style.display = 'none';
+                MBK.style.display = 'none';
+                MCU.style.display = 'none';
+                RU.style.display = 'none';
+                UC.style.display = 'none';
+        });
+        document.querySelector('#mv').addEventListener('click', function(){
+                CB.style.display = 'none';
+                MBR.style.display = 'none';
+                AAV.style.display = 'none';
+                MV.style.display = 'block';
+                MBK.style.display = 'none';
+                MCU.style.display = 'none';
+                RU.style.display = 'none';
+                UC.style.display = 'none';
+        });
+        document.querySelector('#mbk').addEventListener('click', function(){
+                CB.style.display = 'none';
+                MBR.style.display = 'none';
+                AAV.style.display = 'none';
+                MV.style.display = 'none';
+                MBK.style.display = 'block';
+                MCU.style.display = 'none';
+                RU.style.display = 'none';
+                UC.style.display = 'none';
+        });
+        document.querySelector('#mcu').addEventListener('click', function(){
+                CB.style.display = 'none';
+                MBR.style.display = 'none';
+                AAV.style.display = 'none';
+                MV.style.display = 'none';
+                MBK.style.display = 'none';
+                MCU.style.display = 'block';
+                RU.style.display = 'none';
+                UC.style.display = 'none';
+        });
+        document.querySelector('#ru').addEventListener('click', function(){
+                CB.style.display = 'none';
+                MBR.style.display = 'none';
+                AAV.style.display = 'none';
+                MV.style.display = 'none';
+                MBK.style.display = 'none';
+                MCU.style.display = 'none';
+                RU.style.display = 'block';
+                UC.style.display = 'none';
+        });
+        document.querySelector('#uc').addEventListener('click', function(){
+                CB.style.display = 'none';
+                MBR.style.display = 'none';
+                AAV.style.display = 'none';
+                MV.style.display = 'none';
+                MBK.style.display = 'none';
+                MCU.style.display = 'none';
+                RU.style.display = 'none';
+                UC.style.display = 'block';
+        });
+        
+        
+        
+        </script>
+    </body>
+</html>
